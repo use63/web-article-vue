@@ -1,4 +1,4 @@
-site: [use63](https://use63.netlify.app/)
+Preview: [use63](https://use63.netlify.app/)
 
 ## Project setup
 
