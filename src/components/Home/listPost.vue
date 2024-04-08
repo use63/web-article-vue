@@ -1,14 +1,27 @@
 <template>
     <div class="listPost">
-        <div class="image">
-            <img src="/img/landingpage.jpg" alt="">
+        <div class="picture">
+            <img src="/img/javascript.jpg" alt="">
         </div>
         <div class="text">
-            <h3>Judul Postingan</h3>
-            <p>
-                <span>24 Desember 2024 | 23:45</span>
-                penggalan artikel, Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quo quia ipsa veniam optio odit possimus perspiciatis quibusdam sed? Modi aliquam adipisci, dolore nisi corrupti cupiditate vero mollitia unde temporibus?
-            </p>
+            <span class="title">
+                <h1>Judul postingan</h1>
+            </span>
+            <span class="date">
+                12 Desember 2024 | Nori Nofandi
+            </span>
+            <span class="article">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam iste tenetur id at non itaque?
+                    Labore, est quisquam! Doloribus laudantium debitis aut quisquam ea quae, nesciunt obcaecati tempora
+                    nemo voluptas!</p>
+            </span>
+            <span class="tags">
+                Tags: 
+                <span class="tag">Android</span>
+                <span class="tag">Android</span>
+                <span class="tag">Android</span>
+                <span class="tag">Android</span>
+            </span>
         </div>
     </div>
 </template>
@@ -22,44 +35,74 @@ export default {
 <style lang="scss" scoped>
 
 .listPost {
-    margin: 0 1rem;
-    display: grid;
-    grid-template-columns: auto auto;
-    cursor: default;
-    &:hover {
-        filter: saturate(1.5);
-    }
-}
-
-.image {
+    display: flex;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    border-radius: 1rem;
     overflow: hidden;
-    transition: all 3s;
-    img {
-        max-width: 300px;
-        border-radius: 1rem;
+}
+.picture {
+    width: 300px;
+    max-height: 180px;
+    background-color: aquamarine;
+
+    &:hover {
+        background-color: red;
     }
 }
 
 .text {
-    padding: 1em;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    overflow: hidden;
-    h3 {
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 1.5rem;
-        font-weight: 700;
+    justify-content: space-between;
+    padding: 1rem;
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        h1 {
+            font-weight: 700;
+            font-size: 1.3rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        p {
+            color: #444;
+        }
     }
-    p {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        text-align: justify;
-        span {
-            font-family: Arial, Helvetica, sans-serif;
-            display: block;
-            color: gray;
-            margin-bottom: .5em;
-            font-size: small;
+
+    .article {
+        color: #444;
+    }
+
+    .date {
+        color: #555;
+        font-size: .9rem;
+    }
+
+    .tags {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: .2rem;
+        color: #666;
+        font-size: .9rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        .tag {
+            background-color: navy;
+            font-size: .8rem;
+            font-weight: 300;
+            padding: 3px;
+            border-radius: 3px;
+            color: white;
+            transition: .2s;
+            &:hover {
+                background-color: red;
+                color: navy;
+                cursor: pointer;
+            }
         }
     }
 }

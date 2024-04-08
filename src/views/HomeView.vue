@@ -48,6 +48,7 @@ export default {
     }
     .home {
         background-color: white;
+        border-radius: 0 0 1rem 0;
         width: 60%;
         margin: auto;
         display: flex;

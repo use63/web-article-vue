@@ -24,13 +24,15 @@ export default {
 .terbaru {
     h1 {
         background-color: lightskyblue;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 700;
+        color: white;
         padding: 1em;
-        margin: 3em 0 2em;
+        margin: 0 0 2rem;
     }
     span {
         display: flex;
         flex-direction: row;
-        gap: 1.5rem;
         span {
             display: flex;
             flex-direction: column;

@@ -42,12 +42,13 @@ export default {
     overflow: hidden;
     h3 {
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: 700;
     }
     p {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         text-align: justify;
+        color: #444;
         span {
             font-family: Arial, Helvetica, sans-serif;
             display: block;
